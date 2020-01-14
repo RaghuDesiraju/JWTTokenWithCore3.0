@@ -46,7 +46,7 @@ namespace JWTToken.API.Controllers
 
            var createdUser = await _repo.Register(userToCreate,userForRegisterDTO.Password);
            //return StatusCode(201);
-          return Created("http://example.org/myitem", new { message = userForRegisterDTO.UserName + " created" });
+          return Created("http://example.org/myitem", new { message = userForRegisterDTO.UserName + " has been created" });
         }
 
          [HttpPost("RequestToken")]

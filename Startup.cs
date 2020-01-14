@@ -19,12 +19,15 @@ using Microsoft.AspNetCore.Diagnostics;
 using JWTToken.API.Helpers;
 using Microsoft.AspNetCore.Http;
 
+//dotnet new webapi -o JWTToken.API -n JWTToken.API
+//dotnet add package Microsoft.EntityFrameworkCore
 //also run dotnet tool install --global dotnet-ef --version 3.0.0
 //dotnet add package Microsoft.EntityFrameworkCore.Design
 //for the first time run following 2
 //dotnet ef migrations add InitialCreate
 //dotnet ef database update 
 //dotnet add package Newtonsoft.Json
+//dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer -v 3.1.0
 namespace JWTToken.API
 {
     public class Startup
